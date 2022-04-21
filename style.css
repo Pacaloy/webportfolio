@@ -1,0 +1,311 @@
+:root {
+	font-size: 16px;
+	--red: #F28FAD;
+	--orange: #F8BD96;
+	--green: #ABE9B3;
+	--blue: #96CDFB;
+	--magenta: #F5C2E7;
+	--cyan: #B5E8E0;
+}
+
+body {
+	font-family: 'JetBrains Mono', monospace;
+	color: #D3C9D6;
+	background: #1E1E2E;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #6649b8;
+}
+
+.navbar {
+	background: black !important;
+	opacity: 0.8;
+}
+
+.navbar .navbar-nav {
+	margin: auto;
+}
+
+.navbar .nav-item a {
+	color: #FFF !important;
+}
+
+.navbar .nav-item a:hover {
+	color: var(--green) !important;
+}
+
+.logo {
+	transition: 600ms;
+}
+
+.logo:hover {
+	filter: brightness(1.22) !important;
+}
+
+div ul .fa-ghost {
+	font-size: 2rem;
+}
+
+div ul .fa-ghost:hover {
+	filter: brightness(1.22);
+}
+
+.home__name span:hover {
+	color: var(--cyan);
+}
+
+.pfp:hover {
+	filter: brightness(1.22);
+}
+
+h2 {
+	color: var(--green);
+}
+
+.anime__logo {
+	height: 5rem;
+	animation: mySpinner 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mySpinner {
+	from {transfrom: rotate(0deg);}
+	25% {transform: rotate(-45deg);}
+	75% {transform: rotate(360deg);}
+	to {transform: rotate(360deg);}
+}
+
+.start__ghost {
+	width: 100%;
+	margin: 1rem auto 0;
+	display: flex;
+	/*justify-content: flex-start;*/
+	overflow: hidden;
+}
+
+.start__ghost .fa-ghost {
+	font-size: 4rem;
+	margin: 2rem 1rem;
+	padding: 0;
+}
+/* 2s for bounce only */
+.start__ghost .odd {
+	animation: bounce01 30s infinite;
+}
+
+@keyframes bounce01 {
+	/*0% {transform: translateY(0) translateX(-500px);}
+	9% {transform: translateY(-1rem) translateX(9vw);}
+	17% {transform: translateY(0) translateX(17vw);}
+	25% {transform: translateY(-1rem) translateX(25vw);}
+	34% {transform: translateY(0) translateX(34vw);}
+	42% {transform: translateY(-1rem) translateX(42vw);}
+	50% {transform: translateY(0) translateX(50vw);}
+	59% {transform: translateY(-1rem) translateX(59vw);}
+	67% {transform: translateY(0) translateX(67vw);}
+	75% {transform: translateY(-1rem) translateX(75vw);}
+	84% {transform: translateY(0) translateX(84vw);}
+	92% {transform: translateY(-1rem) translateX(92vw);}
+	100% {transform: translateY(0) translateX(100vw);}*/
+
+	0% {transform: translateX(-500px);}
+	30% {transform: translateX(-500px);}
+	100% {transform: translateX(100vw);}
+}
+
+.start__ghost .even{
+	animation: bounce02 30s infinite;
+}
+
+@keyframes bounce02 {
+	/*0% {transform: translateY(-1rem) translateX(-500px);}
+	9% {transform: translateY(0) translateX(9vw);}
+	17% {transform: translateY(-1rem) translateX(17vw);}
+	25% {transform: translateY(0) translateX(25vw);}
+	34% {transform: translateY(-1rem) translateX(34vw);}
+	42% {transform: translateY(0) translateX(42vw);}
+	50% {transform: translateY(-1rem) translateX(50vw);}
+	59% {transform: translateY(0) translateX(59vw);}
+	67% {transform: translateY(-1rem) translateX(67vw);}
+	75% {transform: translateY(0) translateX(75vw);}
+	84% {transform: translateY(-1rem) translateX(84vw);}
+	92% {transform: translateY(0) translateX(92vw);}
+	100% {transform: translateY(-1rem) translateX(100vw);}*/
+
+	0% {transform: translateX(-500px);}
+	30% {transform: translateX(-500px);}
+	100% {transform: translateX(100vw);}
+}
+
+.break__ghost {
+	width: 100%;
+	margin: 1rem auto 0;
+	display: flex;
+	/*justify-content: flex-start;*/
+	overflow: hidden;
+}
+
+.break__ghost .fa-ghost {
+	font-size: 4rem;
+	margin: 2rem 1rem;
+	padding: 0;
+}
+/* 2s for bounce only */
+.break__ghost .odd {
+	animation: bounce1 40s infinite;
+}
+
+@keyframes bounce1 {
+	/*0% {transform: translateY(0) translateX(-500px);}
+	9% {transform: translateY(-1rem) translateX(9vw);}
+	17% {transform: translateY(0) translateX(17vw);}
+	25% {transform: translateY(-1rem) translateX(25vw);}
+	34% {transform: translateY(0) translateX(34vw);}
+	42% {transform: translateY(-1rem) translateX(42vw);}
+	50% {transform: translateY(0) translateX(50vw);}
+	59% {transform: translateY(-1rem) translateX(59vw);}
+	67% {transform: translateY(0) translateX(67vw);}
+	75% {transform: translateY(-1rem) translateX(75vw);}
+	84% {transform: translateY(0) translateX(84vw);}
+	92% {transform: translateY(-1rem) translateX(92vw);}
+	100% {transform: translateY(0) translateX(100vw);}*/
+
+	0% {transform: translateX(-500px);}
+	100% {transform: translateX(100vw);}
+}
+
+.break__ghost .even{
+	animation: bounce2 40s infinite;
+}
+
+@keyframes bounce2 {
+	/*0% {transform: translateY(-1rem) translateX(-500px);}
+	9% {transform: translateY(0) translateX(9vw);}
+	17% {transform: translateY(-1rem) translateX(17vw);}
+	25% {transform: translateY(0) translateX(25vw);}
+	34% {transform: translateY(-1rem) translateX(34vw);}
+	42% {transform: translateY(0) translateX(42vw);}
+	50% {transform: translateY(-1rem) translateX(50vw);}
+	59% {transform: translateY(0) translateX(59vw);}
+	67% {transform: translateY(-1rem) translateX(67vw);}
+	75% {transform: translateY(0) translateX(75vw);}
+	84% {transform: translateY(-1rem) translateX(84vw);}
+	92% {transform: translateY(0) translateX(92vw);}
+	100% {transform: translateY(-1rem) translateX(100vw);}*/
+
+	0% {transform: translateX(-500px);}
+	100% {transform: translateX(100vw);}
+}
+
+/* Home */
+.jumbotron {
+	background: #1E1E2E;
+}
+
+.pfp__title:hover {
+	color: var(--cyan);
+}
+
+/* About */
+.aboutpage {
+	background: #1A1826;
+	border-radius: 1rem;
+}
+
+.contact__me a {
+	color: #D3C9D6
+}
+
+.contact__me a:hover {
+	color: var(--cyan);
+}
+
+/* Projects */
+.projectspage {
+	background: #1A1826;
+	border-radius: 1rem;
+}
+
+.card {
+	height: 100%;
+}
+
+.card img {
+    height: 10rem;
+    /*width: auto;*/
+}
+
+/* Contact */
+.footer {
+	background: #1A1826;
+}
+
+.icon__links i {
+	font-size: 1.5rem;
+	color: #D3C9D6;
+}
+
+.icon__links .fa-facebook-messenger:hover {
+	color: var(--cyan);
+}
+
+.icon__links .fa-facebook:hover {
+	color: var(--blue);
+}
+
+.icon__links .fa-gitlab:hover {
+	color: var(--orange);
+}
+
+.icon__links .fa-github:hover {
+	color: var(--magenta);
+}
+
+.icon__links .fa-youtube:hover {
+	color: var(--red);
+}
+
+#ghostred {
+	color: var(--red);
+}
+
+#ghostorange {
+	color: var(--orange);
+}
+
+#ghostgreen {
+	color: var(--green);
+}
+
+#ghostblue {
+	color: var(--blue);
+}
+
+#ghostmagenta {
+	color: var(--magenta);
+}
+
+#ghostcyan
+{
+	color: var(--cyan);
+}
+
+.footer__email {
+	color: #D3C9D6;
+}
+
+.footer__email:hover {
+	color: var(--cyan);
+}
