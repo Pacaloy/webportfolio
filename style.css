@@ -8,6 +8,10 @@
 	--cyan: #B5E8E0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'JetBrains Mono', monospace;
 	color: #D3C9D6;
