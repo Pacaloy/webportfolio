@@ -8,6 +8,10 @@
 	--cyan: #B5E8E0;
 }
 
+* {
+	/*border: 1px solid red;*/
+}
+
 html {
 	scroll-behavior: smooth;
 }
