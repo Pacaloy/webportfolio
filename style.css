@@ -269,10 +269,6 @@ h2 {
 	color: var(--cyan);
 }
 
-.icon__links .fa-facebook:hover {
-	color: var(--blue);
-}
-
 .icon__links .fa-gitlab:hover {
 	color: var(--orange);
 }
