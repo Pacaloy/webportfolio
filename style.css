@@ -9,7 +9,7 @@
 }
 
 * {
-	/*border: 1px solid red;*/
+	/* outline: 1px solid red; */
 }
 
 html {
@@ -283,6 +283,10 @@ h2 {
 
 .icon__links .fa-youtube:hover {
 	color: var(--red);
+}
+
+.icon__links .fa-linkedin:hover {
+	color: var(--blue);
 }
 
 #ghostred {
